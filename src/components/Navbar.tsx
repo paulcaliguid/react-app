@@ -35,10 +35,13 @@ export function Navbar() {
           style={{
             display: 'flex',
             alignItems: 'center',
+            fontSize: 24,
             fontWeight: 700,
-            letterSpacing: 0.3,
+            letterSpacing: 0.5,
             textDecoration: 'none',
-            color: 'inherit',
+            fontFamily:
+              'Poppins, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial',
+            color: '#000',
           }}
         >
           Paul Caliguid
