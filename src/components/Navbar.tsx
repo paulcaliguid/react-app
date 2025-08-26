@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
+import type { CSSProperties } from 'react'
 
-const linkStyle: React.CSSProperties = {
+const linkStyle: CSSProperties = {
   textDecoration: 'none',
   color: 'inherit',
   padding: '8px 12px',
