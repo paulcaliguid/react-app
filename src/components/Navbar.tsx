@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
+import type { CSSProperties } from 'react'
 
-const linkStyle: React.CSSProperties = {
+const linkStyle: CSSProperties = {
   textDecoration: 'none',
   color: 'inherit',
   padding: '8px 12px',
@@ -29,7 +30,17 @@ export function Navbar() {
           padding: '12px 20px',
         }}
       >
-        <a href="/" style={{ fontWeight: 700, letterSpacing: 0.3 }}>
+        <a
+          href="/"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            fontWeight: 700,
+            letterSpacing: 0.3,
+            textDecoration: 'none',
+            color: 'inherit',
+          }}
+        >
           Paul Caliguid
         </a>
         <div style={{ display: 'flex', gap: 4 }}>
