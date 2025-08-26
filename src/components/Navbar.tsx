@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import type { CSSProperties } from 'react'
-import logo from '../assets/logo.svg'
 
 const linkStyle: CSSProperties = {
   textDecoration: 'none',
@@ -36,14 +35,12 @@ export function Navbar() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 8,
             fontWeight: 700,
             letterSpacing: 0.3,
             textDecoration: 'none',
             color: 'inherit',
           }}
         >
-          <img src={logo} alt="" style={{ height: 32 }} />
           Paul Caliguid
         </a>
         <div style={{ display: 'flex', gap: 4 }}>
