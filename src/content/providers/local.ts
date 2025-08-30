@@ -5,11 +5,12 @@ import about from '../local/about.json'
 import projects from '../local/projects.json'
 import experience from '../local/experience.json'
 import contact from '../local/contact.json'
+import heroAsset from '../../assets/hero.svg'
 
 export const localProvider = {
   getSite: async () => site,
   getNavbar: async () => navbar,
-  getHome: async () => home,
+  getHome: async () => ({ ...home, image: heroAsset }),
   getAbout: async () => about,
   getProjects: async () => projects,
   getExperience: async () => experience,

@@ -1,5 +1,6 @@
 ﻿import hero from '../assets/hero.svg'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { getHome } from '../content/service'
 
 export default function Home() {
@@ -14,15 +15,16 @@ export default function Home() {
           {d?.subheadline ?? ''}
         </p>
         {d?.ctaHref && d?.ctaLabel && (
-          <a href={d.ctaHref} style={{ display: 'inline-block', padding: '12px 20px', background: 'var(--primary)', color: '#fff', borderRadius: 8, textDecoration: 'none', fontWeight: 500 }}>
+          <Link to={(d?.ctaHref && d.ctaHref.startsWith('/') ? d.ctaHref : '/projects')} >
             {d.ctaLabel}
-          </a>
+          </Link>
         )}
       </div>
       <img src={d?.image || hero} alt="" style={{ flex: '1 1 300px', maxWidth: 400, height: 'auto' }} />
     </section>
   )
 }
+
 
 
 
