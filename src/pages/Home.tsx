@@ -1,4 +1,6 @@
-﻿import hero from '../assets/hero.svg'\nimport { useEffect, useState } from 'react'\nimport { getHome } from '../content/service'
+﻿import hero from '../assets/hero.svg'
+import { useEffect, useState } from 'react'
+import { getHome } from '../content/service'
 
 export default function Home() {
   const [data, setData] = useState<{ headline: string; subheadline?: string; ctaLabel?: string; ctaHref?: string; image?: string } | null>(null)
@@ -21,6 +23,7 @@ export default function Home() {
     </section>
   )
 }
+
 
 
 
