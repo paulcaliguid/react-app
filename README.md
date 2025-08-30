@@ -29,3 +29,9 @@ Visit http://localhost:5173
 
 ## License
 MIT
+
+
+
+
+## Deployment
+This app is configured for GitHub Pages via Actions. Push to 'main' builds with Vite and deploys the 'dist' folder. The Vite base is set to '/react-app/'.
