@@ -1,22 +1,13 @@
+﻿import { useEffect, useState } from 'react'
+import { getAbout } from '../content/service'
+
 export default function About() {
+  const [data, setData] = useState<{ heading: string; body: string } | null>(null)
+  useEffect(() => { getAbout().then(setData).catch(() => {}) }, [])
   return (
     <section>
-      <h2>About</h2>
-      <p style={{ color: '#4b5563', maxWidth: 760 }}>
-        I’m Paul Timothy Deximo Caliguid, an aspiring agentic AI engineer and
-        freelancer with a background in engineering and software development.
-        Over the past few years I’ve helped design, build and test software
-        products in corporate settings using Agile methodologies. I’m now
-        shifting my focus to agentic artificial intelligence—creating autonomous
-        agents that can perceive, decide and act to solve complex problems. My
-        interests span prompt engineering, large language models, reinforcement
-        learning and multi-agent systems. Leveraging experience with programming
-        languages such as Python, JavaScript and Java, I enjoy exploring new
-        technologies and applying them to real-world challenges. I’m open to
-        opportunities that allow me to collaborate, learn and contribute to AI
-        projects and to develop my skills as an agentic AI engineer in the
-        service of others.
-      </p>
+      <h2>{data?.heading ?? 'About'}</h2>
+      <p style={{ color: '#4b5563', maxWidth: 760 }}>{data?.body ?? ''}</p>
     </section>
   )
 }

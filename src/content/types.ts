@@ -1,0 +1,10 @@
+﻿export type NavItem = { label: string; path: string }
+export type Navbar = { items: NavItem[] }
+export type SiteMeta = { title: string; description?: string }
+export type Hero = { headline: string; subheadline?: string; ctaLabel?: string; ctaHref?: string; image?: string }
+export type About = { heading: string; body: string }
+export type Project = { title: string; description: string; link?: string }
+export type Projects = { heading: string; items: Project[] }
+export type ExperienceItem = { company: string; role: string; period: string; description: string }
+export type Experience = { heading: string; items: ExperienceItem[] }
+export type Contact = { heading: string; intro?: string }

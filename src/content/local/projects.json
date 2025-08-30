@@ -1,0 +1,7 @@
+﻿{
+  "heading": "Projects",
+  "items": [
+    { "title": "Autonomous Agent Prototype", "description": "Experiment exploring how LLM-powered agents can perceive, decide, and act in complex environments." },
+    { "title": "Agile Testing Toolkit", "description": "Suite of scripts that streamline software testing for teams using Agile methodologies." }
+  ]
+}

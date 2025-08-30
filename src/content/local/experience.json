@@ -1,0 +1,7 @@
+﻿{
+  "heading": "Experience",
+  "items": [
+    { "company": "Corporate Environments", "role": "Software Engineer", "period": "Past few years", "description": "Designed, built, and tested software products using Agile methodologies." },
+    { "company": "Freelance", "role": "Aspiring Agentic AI Engineer", "period": "Present", "description": "Exploring autonomous agents, prompt engineering, large language models, reinforcement learning, and multi-agent systems." }
+  ]
+}
