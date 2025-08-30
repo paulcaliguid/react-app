@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+﻿import { NavLink } from 'react-router-dom'
 import type { CSSProperties } from 'react'
 
 const linkStyle: CSSProperties = {
@@ -30,8 +30,7 @@ export function Navbar() {
           padding: '12px 20px',
         }}
       >
-        <a
-          href="/"
+        <NavLink to="/"
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -45,7 +44,7 @@ export function Navbar() {
           }}
         >
           Paul Caliguid
-        </a>
+        </NavLink>
         <div style={{ display: 'flex', gap: 4 }}>
           <NavLink to="/" style={linkStyle} end>
             Home
@@ -67,3 +66,6 @@ export function Navbar() {
     </header>
   )
 }
+
+
+
