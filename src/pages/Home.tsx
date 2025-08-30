@@ -15,7 +15,7 @@ export default function Home() {
           {d?.subheadline ?? ''}
         </p>
         {d?.ctaHref && d?.ctaLabel && (
-          <Link to={(d?.ctaHref && d.ctaHref.startsWith('/') ? d.ctaHref : '/projects')} >
+          <Link to={(d?.ctaHref && d.ctaHref.startsWith('/') ? d.ctaHref : '/projects' )} style={{ display: 'inline-block', padding: '12px 20px', background: 'var(--primary)', color: '#fff', borderRadius: 8, textDecoration: 'none', fontWeight: 500 }}>
             {d.ctaLabel}
           </Link>
         )}
@@ -24,6 +24,7 @@ export default function Home() {
     </section>
   )
 }
+
 
 
 
