@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+﻿import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { RootLayout } from './layouts/RootLayout'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -9,7 +9,7 @@ import NotFound from './pages/NotFound'
 
 export default function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={import.meta.env.BASE_URL}>
 			<Routes>
 				<Route element={<RootLayout />}>
 					<Route path="/" element={<Home />} />
@@ -23,5 +23,6 @@ export default function App() {
 		</BrowserRouter>
 	)
 }
+
 
 
